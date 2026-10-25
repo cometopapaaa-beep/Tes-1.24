@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "autolitefishing",
+  "version": "${version}",
+  "name": "AutoLiteFishing",
+  "description": "It's just a mod that catches fish for you on servers with the LiteFish plugin installed.",
+  "authors": [
+    "Ynovka"
+  ],
+  "contact": {
+    "sources": "https://github.com/Tr4nter/Auto-Fishing"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/autolitefishing/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.ynovka.autolitefishing.client.AutolitefishingClient"
+    ],
+    "main": [
+      "ru.ynovka.autolitefishing.Autolitefishing"
+    ]
+  },
+  "mixins": [
+    "autolitefishing.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ">=1.21.2 <=1.21.10",
+    "java": ">=17",
+    "fabric": "*"
+  }
+}
